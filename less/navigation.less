@@ -1,7 +1,7 @@
 // Navigation code here
 .navigation {
     width: 100%;
-    background: #f4f4f4;
+    background: @wild-sand;
 }
 
 .navbar {
@@ -9,6 +9,7 @@
     max-width: 800px;
     margin: auto;
     padding: 20px 0;
+    color: @river-bend;
 
     @media @mobile {
         flex-wrap: wrap;
@@ -17,15 +18,16 @@
 }
 
 nav {
-
-
-    @media @mobile {
+      @media @mobile {
         display: block;
         align-content: center;
     }
 }
 
 .left {
+    h1 {
+        color: red;
+    }
     @media @mobile {
         .displayFlex(center, center);
         margin: auto;
