@@ -2,68 +2,39 @@
 .navigation {
     width: 100%;
     background: @wild-sand;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .navbar .left {
     .displayFlex(center, center);
     margin:  0 50%;
+    padding-bottom: 2rem;
 }
 
-.nav .a {
-    .displayFlex(space-evenly, center):
-    margin: 1rem 50%;
-    text-decoration: none;
-}
-
-/*.navbar {
-    .displayFlex(space-between, center);
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 0;
-    color: @river-bend;
-
-    @media @mobile {
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-
-
-nav {
-      @media @mobile {
-        display: block;
-        align-content: center;
-    }
-}
-
-.left {
-    h1 {
-
-    }
-    @media @mobile {
-        .displayFlex(center, center);
-        margin: auto;
-        padding-bottom: 1.5rem;
-    }
-}
-
-.first-anchor {
-    margin-left: 0;
-}
-
-a {
-    margin: auto;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: black;
-    align-items: auto;
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 100%;
-}
-    @media @mobile {
-        width: 100%;
-        margin-left: 0;
-        justify-content: space-evenly;
-        padding: 1rem 2rem;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        padding: 2rem 6rem;
+         font-size: 1.6rem;
+        color: @nav-font;
+        justify-content: space-between;
+
+
     }
-}*/
+
+}
+.navbar .nav-bottom {
+    justify-content: space-evenly;
+}
+
+
+
+
+
 
