@@ -183,35 +183,36 @@ p {
   }
 }
 @media (max-width: 500px) {
-  nav {
+  .navbar nav {
     display: block;
     align-content: center;
   }
 }
-.left h1 {
+.navbar .left h1 {
   color: red;
 }
 @media (max-width: 500px) {
-  .left {
+  .navbar .left {
     justify-content: center;
     align-items: center;
     margin: auto;
     padding-bottom: 1.5rem;
   }
 }
-.first-anchor {
+.navbar .first-anchor {
   margin-left: 0;
 }
-a {
+.navbar a {
   margin: auto;
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
   align-items: auto;
   justify-content: space-evenly;
+  max-width: 100%;
 }
 @media (max-width: 500px) {
-  a {
+  .navbar {
     width: 100%;
     margin-left: 0;
     justify-content: space-evenly;
@@ -272,9 +273,11 @@ footer {
 }
 @media (max-width: 500px) {
   .walk {
-    display: block;
     padding: 1rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
 }
 .walk .walk-text {
@@ -290,6 +293,7 @@ footer {
   .walk .walk-text {
     padding-right: 0;
     width: 100%;
+    order: 1;
   }
 }
 .walk .walk-img {
@@ -307,5 +311,6 @@ footer {
     width: 100%;
     padding-left: 0;
     margin: 0;
+    order: 2;
   }
 }
