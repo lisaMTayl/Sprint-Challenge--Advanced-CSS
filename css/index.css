@@ -161,8 +161,8 @@ h5 {
   color: #23293B;
 }
 h1 {
-  font-size: 4rem;
-  color: #454A59;
+  font-size: 3.5rem;
+  color: ebony-clay;
 }
 h2 {
   font-size: 3.2rem;
@@ -202,9 +202,6 @@ p {
     display: block;
     align-content: center;
   }
-}
-.navbar .left h1 {
-  color: red;
 }
 @media (max-width: 500px) {
   .navbar .left {
@@ -306,9 +303,8 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-text {
-    padding-right: 0;
     width: 100%;
-    order: 1;
+    padding: 2rem 1rem;
   }
 }
 .walk .walk-img {
@@ -322,10 +318,17 @@ footer {
   margin: 0;
 }
 @media (max-width: 500px) {
+  .walk .walk-img img {
+    padding-top: 1rem;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 500px) {
   .walk .walk-img {
-    width: 100%;
+    width: 98%;
     padding-left: 0;
-    margin: 0;
+    padding-right: 0;
+    margin: 1rem;
     order: 2;
   }
 }
