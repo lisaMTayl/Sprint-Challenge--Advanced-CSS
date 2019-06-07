@@ -274,6 +274,7 @@ footer {
   .walk {
     display: block;
     padding: 1rem;
+    margin-top: 2rem;
   }
 }
 .walk .walk-text {
