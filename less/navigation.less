@@ -7,27 +7,30 @@
 }
 
 .navbar .left {
-    .displayFlex(center, center);
+    .displayFlex();
     margin:  0 50%;
     padding-bottom: 2rem;
 }
 
 .navbar {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
 
-    a {
-        text-decoration: none;
-        padding: 2rem 6rem;
-         font-size: 1.6rem;
-        color: @nav-font;
-        justify-content: space-between;
+    nav {
+        .displayFlex(space-between);
 
+        a  {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
 
-    }
-
+            @media @mobile {
+                padding: 1rem 2rem;
+                width: 100%;
+            }
+    }   }
 }
 .navbar .nav-bottom {
     justify-content: space-evenly;
